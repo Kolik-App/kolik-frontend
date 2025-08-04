@@ -124,8 +124,8 @@ function onSubmit() {
 }
 
 .auth__input {
-  --padding-start: 12px;
-  --padding-end: 12px;
+  padding-start: 12px;
+  padding-end: 12px;
   font-size: 16px;
   color: #858585;
   border-radius: 12px;
@@ -148,7 +148,7 @@ function onSubmit() {
   font-size: 16px;
   font-weight: 700;
   border-radius: 12px;
-  --padding-start: 24px;
-  --padding-end: 24px;
+  padding-start: 24px;
+  padding-end: 24px;
 }
 </style>
