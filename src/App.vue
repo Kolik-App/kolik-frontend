@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
   <ion-app>
     <ion-router-outlet />
@@ -12,14 +11,3 @@ import { IonApp, IonRouterOutlet } from '@ionic/vue'
 <style>
 
 </style>
-=======
-<template>
-  <ion-app>
-    <router-view />
-  </ion-app>
-</template>
-
-<script setup>
-import { IonApp } from '@ionic/vue'
-</script>
->>>>>>> 4894ff1 (добавил верстку экрана входа)
