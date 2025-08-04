@@ -89,15 +89,15 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%; /* ✅ */
+  height: 100%;
 }
 
 .auth__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* ✅ */
-  background: #0048FF; /* ✅ Устанавливаем фон через CSS-переменную */
+  height: 100%; 
+  background: #0048FF; 
 }
 
 .auth__container {
