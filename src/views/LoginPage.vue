@@ -146,8 +146,8 @@ function onSubmit() {
   background-color: #0048FF;
   color: #fff;
   font-size: 16px;
-  font-weight: 700;
-  border-radius: 12px;
+  font-weight: 400;
+  border-radius: 50px;
   padding-start: 24px;
   padding-end: 24px;
 }

@@ -4,17 +4,22 @@ import { RouteRecordRaw } from 'vue-router'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/login'
+    redirect: '/welcome'
+  },
+  {
+    path: '/welcome',
+    name: 'Welcome',
+    component: () => import('@/views/WelcomePage.vue')
   },
   {
     path: '/login',
     name: 'Login',
     component: () => import('@/views/LoginPage.vue')
   },
-  {
-    path: '/home',
-    name: 'Home',
-    component: () => import('@/views/HomePage.vue') 
+   {
+    path: '/register',
+    name: 'Register',
+    component: () => import('@/views/RegistrationPage.vue')
   }
 ]
 
