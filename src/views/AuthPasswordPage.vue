@@ -52,34 +52,7 @@
   </ion-page>
 </template>
 
-<script setup lang="ts">
-import { IonPage, IonContent, IonButton, IonInput } from '@ionic/vue'
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-const password = ref('')
-const confirmPassword = ref('')
-const showPassword = ref(false)
-const showConfirmPassword = ref(false)
-
-const togglePassword = () => {
-  showPassword.value = !showPassword.value
-}
-
-const toggleConfirmPassword = () => {
-  showConfirmPassword.value = !showConfirmPassword.value
-}
-
-const goBack = () => {
-  router.back()
-}
-
-const submitForm = () => {
-  console.log('Пароль: ', password.value)
-  console.log('Подтверждение: ', confirmPassword.value)
-}
+<script setup>
 </script>
 
 <style scoped>

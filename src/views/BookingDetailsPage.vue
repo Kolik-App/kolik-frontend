@@ -2,13 +2,13 @@
   <ion-page class="booking-details">
     <nav class="bottom-nav">
       <a href="#" class="bottom-nav__item">
-        <img src="/svg1/Home.svg" alt="Дом" />
+        <img src="/src/assets/booking-details/booking-home.svg" alt="Дом" />
       </a>
       <a href="#" class="bottom-nav__item bottom-nav__item--active">
-        <img src="" alt="Календарь" />
+        <img src="/src/assets/booking-details/booking-calendar.svg" alt="Календарь" />
       </a>
       <a href="#" class="bottom-nav__item">
-        <img src="/svg/Frame 9.svg" alt="Профиль" />
+        <img src="/src/assets/booking-details/booking-profile.svg" alt="Профиль" />
       </a>
     </nav>
 
@@ -20,7 +20,7 @@
           <div class="booking-details__company">
             <span class="booking-details__company-name">AutoTech</span>
             <span class="booking-details__status">
-              <img src="/svg1/Vector.svg" alt="Подтверждено" class="booking-details__status-icon" />
+              <img src="/src/assets/booking-details/booking-tick.svg" alt="Подтверждено" class="booking-details__status-icon" />
               Подтверждено
             </span>
           </div>
@@ -44,7 +44,7 @@
         </section>
 
         <a href="#" class="booking-details__map-btn">
-          <img src="/svg1/Map.svg" alt="Открыть в картах" class="booking-details__map-icon" />
+          <img src="/src/assets/booking-details/booking-map.svg" alt="Открыть в картах" class="booking-details__map-icon" />
           Открыть в картах
         </a>
 
@@ -57,8 +57,7 @@
   </ion-page>
 </template>
 
-<script setup lang="ts">
-import { IonPage, IonContent } from '@ionic/vue'
+<script setup>
 </script>
 
 <style scoped>
@@ -191,14 +190,13 @@ import { IonPage, IonContent } from '@ionic/vue'
 .booking-details__btn--cancel {
   background-color: white;
   color: red;
-  border: 2px solid; 
+  border: 2px solid #0048ff; 
   border-radius: 12px;
 }
 
 .booking-details__container {
   padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
 }
-
 
 .bottom-nav {
   position: fixed;
@@ -237,6 +235,6 @@ import { IonPage, IonContent } from '@ionic/vue'
   transform: translateX(-50%);
   width: 64px;
   height: 4px;
-  background: url('/svg/Arrow.svg') no-repeat center / contain;
+  background: url('/src/assets/booking-details/booking-arrow.svg') no-repeat center / contain;
 }
 </style>

@@ -12,8 +12,15 @@
     <ion-content class="ion-padding">
       <div class="registration">
         <div class="registration__header">
+
+          <div class="registration__title-wrapper">
+
+            <button class="registration__back">
+            <img src="/src/assets/universal.svg" alt="universal" />
+            </button>
           <ion-icon :icon="arrowBack" class="registration__back" @click="$router.back()" />
           <h1 class="registration__title">Регистрация</h1>
+          </div>
           <p class="registration__subtitle">Введите ваш номер телефона</p>
         </div>
 
@@ -36,12 +43,18 @@
   </ion-page>
 </template>
 
-<script setup lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonButton, IonButtons, IonBackButton, IonIcon } from '@ionic/vue'
-import { arrowBack } from 'ionicons/icons'
+<script setup>
 </script>
 
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+.ion-padding{
+  font-family: 'Roboto', sans-serif;
+}
+
 .registration {
   margin-top: 60px;
   padding: 0 24px;
@@ -54,6 +67,21 @@ import { arrowBack } from 'ionicons/icons'
   display: flex;
   flex-direction: column;
 }
+
+.registration__back {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.registration__back img {
+  width: 26px;
+  height: 26px;
+}
+
 
 .registration__back {
   width: 24px;
@@ -69,6 +97,7 @@ import { arrowBack } from 'ionicons/icons'
 
 .registration__subtitle {
   font-size: 16px;
+  font-weight: 400;
   color: #7d7d7d;
   margin-bottom: 24px;
 }
@@ -90,12 +119,9 @@ import { arrowBack } from 'ionicons/icons'
   padding-end: 12px;
   height: 48px;
   font-size: 16px;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
-/* .registration__input::part(native) {
-  padding-left: 24px;
-  */
 
 .registration__button-wrapper {
   display: flex;
@@ -104,10 +130,11 @@ import { arrowBack } from 'ionicons/icons'
 }
 
 .registration__button {
+  --border-radius: 14px;
   width: 100%;
   height: 43px;
-  background: #0048ff;
-  font-size: 16px;
-  border-radius: 12px;
+  --background: #0048ff;
+  --font-size: 14px;
+  font-weight: 400;
 }
 </style>

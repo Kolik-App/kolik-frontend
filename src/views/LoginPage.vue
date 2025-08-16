@@ -2,9 +2,11 @@
   <ion-page class="page">
     <ion-content :fullscreen="true">
       <div class="auth">
-        <ion-button class="auth__back" fill="clear" @click="goBack">
-          <ion-icon :icon="arrowBackOutline"></ion-icon>
+
+        <ion-button class="auth__back" fill="clear">
+          <img src="/src/assets/universal.svg" alt="Назад" />
         </ion-button>
+
 
         <h1 class="auth__title">Вход</h1>
         <p class="auth__subtitle">Введите ваш логин и пароль</p>
@@ -43,21 +45,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { IonPage, IonContent, IonButton, IonInput, IonIcon } from '@ionic/vue';
-import { arrowBackOutline } from 'ionicons/icons';
-
-const phone = ref('');
-const password = ref('');
-
-function goBack() {
-  window.history.back();
-}
-
-function onSubmit() {
-  console.log('Телефон:', phone.value);
-  console.log('Пароль:', password.value);
-}
 </script>
 
 <style scoped>
@@ -81,10 +68,16 @@ function onSubmit() {
 }
 
 .auth__back {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  font-size: 24px;
+  align-self: flex-start;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.auth__back img {
+  width: 24px;
+  height: 24px;
 }
 
 .auth__title {
@@ -143,12 +136,10 @@ function onSubmit() {
 
 .auth__button {
   height: 43px;
-  background-color: #0048FF;
-  color: #fff;
-  font-size: 16px;
+  --background-color: #0048FF;
+  --color: #fff;
+  font-size: 14px;
   font-weight: 400;
-  border-radius: 50px;
-  padding-start: 24px;
-  padding-end: 24px;
+  --border-radius: 14px;
 }
 </style>

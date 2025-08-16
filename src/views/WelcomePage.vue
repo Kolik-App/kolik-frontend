@@ -31,8 +31,13 @@ const handleRegister = () => {
 
 </script>
 
-<style>
+<style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 .welcome__content {
+  font-family: 'Roboto', sans-serif;
   --background: #0048ff;
   position: relative;
 }
@@ -65,7 +70,7 @@ const handleRegister = () => {
 
 .welcome__subtitle {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #FFFFFFB2;
   margin: 0;
 }
 
@@ -80,17 +85,18 @@ const handleRegister = () => {
 .button__primary {
   --background: #ffffff;
   --color: #0048ff;
-  border-radius: 12px;
-  font-size: 16px;
+  --border-radius: 14px;
+  font-size: 14px;
   height: 48px;
 }
 
 .button__secondary {
   --color: #ffffff;
   --border-color: #ffffff;
-  border-radius: 12px;
-  font-size: 16px;
+  --border-radius: 14px;
+  font-size: 12px;
   height: 48px;
+  font-weight: 400;
 }
 </style>
 

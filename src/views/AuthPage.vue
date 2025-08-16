@@ -30,35 +30,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { IonPage, IonContent, IonButton, IonInput } from '@ionic/vue';
-
-const code = ref(Array(6).fill(''));
-
-const goBack = () => {
-  history.back();
-};
-
-const onInput = (index) => {
-  if (code.value[index].length === 1 && index < code.value.length - 1) {
-    focusInput(index + 1);
-  }
-};
-
-const onBackspace = (index, event) => {
-  if (!code.value[index] && index > 0) {
-    focusInput(index - 1);
-  }
-};
-
-const focusInput = (index) => {
-  const inputs = document.querySelectorAll('.auth__code-input input');
-  if (inputs[index]) inputs[index].focus();
-};
-
-const submitCode = () => {
-  console.log('Код подтверждения:', code.value.join(''));
-};
 </script>
 
 <style scoped>
