@@ -12,7 +12,7 @@
 
         <div class="header__icon">
           <button class="header__notif" type="button" aria-label="Уведомления">
-            <img src="/src/assets/Frame-10.svg" alt="Уведомление" />
+            <img src="/src/assets/svg/home/home-notification.svg" alt="Уведомление" />
           </button>
         </div>
       </div>
@@ -22,7 +22,7 @@
       <section class="promo">
         <div class="promo__card">
           <span class="promo__icon">
-            <img src="/src/assets/Frame-1.svg" alt="Скидка" />
+            <img src="/src/assets/svg/home/home-discount.svg" alt="Скидка" />
           </span>
           <p class="promo__text">Скидки 15% на диагностику до 15 июля</p>
         </div>
@@ -33,7 +33,7 @@
 
         <div class="history__item">
           <span class="history__icon">
-            <img src="/src/assets/Frame-2.svg" alt="Замена масло" />
+            <img src="/src/assets/svg/home/home-station.svg" alt="Замена масло" />
           </span>
           <div class="history__info">
             <p class="history__name">AutoFix</p>
@@ -44,7 +44,7 @@
 
         <div class="history__item">
           <span class="history__icon">
-            <img src="/src/assets/Frame-3.svg" alt="Ключ" />
+            <img src="/src/assets/svg/home/home-wrench.svg" alt="Ключ" />
           </span>
           <div class="history__info">
             <p class="history__name">SpeedService</p>
@@ -55,7 +55,7 @@
 
         <div class="history__item">
           <span class="history__icon">
-            <img src="/src/assets/Frame-4.svg" alt="Поиск" />
+            <img src="/src/assets/svg/home/home-search.svg" alt="Поиск" />
           </span>
           <div class="history__info">
             <p class="history__name">SpeedService</p>
@@ -70,14 +70,14 @@
 
         <div class="news__item">
           <span class="news__icon">
-            <img src="/src/assets/Frame-5.svg" alt="Новости" />
+            <img src="/src/assets/svg/home/home-tools.svg" alt="Новости" />
           </span>
           <p class="news__text">Открылось новое СТО в вашем районе</p>
         </div>
 
         <div class="news__item">
           <span class="news__icon">
-            <img src="/src/assets/Frame-6.svg" alt="Скидки" />
+            <img src="/src/assets/svg/home/home-coupon.svg" alt="Скидки" />
           </span>
           <p class="news__text">Скидки 15% в <b>SpeedService</b></p>
         </div>
@@ -88,13 +88,13 @@
     <ion-footer translucent>
       <nav class="bottom-nav">
         <a href="#" class="bottom-nav__item bottom-nav__item--active">
-          <img src="/src/assets/Frame-7.svg" alt="Дом" />
+          <img src="/src/assets/svg/home/home-main.svg" alt="Дом" />
         </a>
         <a href="#" class="bottom-nav__item">
-          <img src="/src/assets/Frame-8.svg" alt="Календарь" />
+          <img src="/src/assets/svg/home/home-calendar.svg" alt="Календарь" />
         </a>
         <a href="#" class="bottom-nav__item">
-          <img src="/src/assets/Frame-9.svg" alt="Профиль" />
+          <img src="/src/assets/svg/home/home-profile.svg" alt="Профиль" />
         </a>
       </nav>
     </ion-footer>
@@ -301,6 +301,6 @@ body.page {
   transform: translateX(-50%);
   width: 64px;
   height: 4px;
-  background: url('/src/assets/Arrow.svg') no-repeat center / contain;
+  background: url('/src/assets/svg/home/home-dach.svg') no-repeat center / contain;
 }
 </style>

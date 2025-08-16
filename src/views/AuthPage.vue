@@ -14,7 +14,7 @@
             class="auth__code-input"
             maxlength="1"
             inputmode="numeric"
-            type="text"
+            type="text"`
             pattern="[0-9]*"
             v-model="code[index]"
             @input="onInput(index)"
