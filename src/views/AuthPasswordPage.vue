@@ -57,7 +57,7 @@
 
 <style scoped>
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fff;
   margin: 0;
   padding: 0;
