@@ -41,6 +41,12 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Booking-Details',
     component: () => import('@/views/BookingDetailsPage.vue')
   }
+  ,
+   {
+    path: '/booking-time',
+    name: 'Booking-Time',
+    component: () => import('@/views/BookingTime.vue')
+  }
 ]
 
 const router = createRouter({
